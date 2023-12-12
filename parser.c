@@ -2,11 +2,13 @@
 
 /**
  * is_cmd - determines if a file is an executable command
+ *
  * @info: the info struct
  * @path: path to the file
  *
  * Return: 1 if true, 0 otherwise
  */
+
 int is_cmd(info_t *info, char *path)
 {
 	struct stat st;
@@ -24,12 +26,14 @@ int is_cmd(info_t *info, char *path)
 
 /**
  * dup_chars - duplicates characters
+ *
  * @pathstr: the PATH string
  * @start: starting index
  * @stop: stopping index
  *
  * Return: pointer to new buffer
  */
+
 char *dup_chars(char *pathstr, int start, int stop)
 {
 	static char buf[1024];
